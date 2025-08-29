@@ -308,7 +308,7 @@ UI.tap[1].sprite.src = "img/tap/t1.png";
 
 let counter = Math.floor(Math.random()*10);
 console.log(counter);
-if(counter <= 8) {
+if(counter <= 7) {
   bird.animations[0].sprite.src = "img/bird/b0.png";
   bird.animations[1].sprite.src = "img/bird/b1.png";
   bird.animations[2].sprite.src = "img/bird/b2.png";

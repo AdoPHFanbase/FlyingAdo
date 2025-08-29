@@ -129,8 +129,8 @@ const bird = {
     { sprite: new Image() },
   ],
   rotatation: 0,
-  x: 30,
-  y: 40,
+  x: 25,
+  y: 35,
   speed: 0,
   gravity: 0.130,
   thrust: 3.4,
@@ -305,10 +305,21 @@ UI.gameOver.sprite.src = "img/go.png";
 UI.getReady.sprite.src = "img/getready.png";
 UI.tap[0].sprite.src = "img/tap/t0.png";
 UI.tap[1].sprite.src = "img/tap/t1.png";
-bird.animations[0].sprite.src = "img/bird/b0.png";
-bird.animations[1].sprite.src = "img/bird/b1.png";
-bird.animations[2].sprite.src = "img/bird/b2.png";
-bird.animations[3].sprite.src = "img/bird/b0.png";
+
+let counter = Math.floor(Math.random()*10);
+console.log(counter);
+if(counter <= 8) {
+  bird.animations[0].sprite.src = "img/bird/b0.png";
+  bird.animations[1].sprite.src = "img/bird/b1.png";
+  bird.animations[2].sprite.src = "img/bird/b2.png";
+  bird.animations[3].sprite.src = "img/bird/b0.png";
+} else {
+  bird.animations[0].sprite.src = "img/bird/c0.png";
+  bird.animations[1].sprite.src = "img/bird/c1.png";
+  bird.animations[2].sprite.src = "img/bird/c2.png";
+  bird.animations[3].sprite.src = "img/bird/c0.png";
+}
+
 SFX.start.src = "sfx/start.wav";
 SFX.flap.src = "sfx/flap.wav";
 SFX.score.src = "sfx/score.wav";

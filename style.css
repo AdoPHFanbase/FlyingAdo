@@ -12,8 +12,3 @@ body {
     margin-bottom: 16px;
 }
 
-body {
-    zoom: 1.5;
-    -moz-transform: scale(1.5);
-    -moz-transform-origin: 0 0;
-}
